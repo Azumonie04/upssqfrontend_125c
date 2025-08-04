@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <link rel="stylesheet" href="/week2/pseudo-element-selector/style.css">
+</head>
+<body>
+    <h1>Pseudo element</h1>
+
+    <p>A css pseudo element is used to style specific part of an element, it is used to style the first letter or line of an element, insert content before or after an element, style the markers of list item, style the view box behind the dialog box</p>
+    <h2>Pseudo element syntax</h2>
+    <code>
+        selector::pseudo-element{
+            property:value;
+        }
+    </code>
+    <h3>The first line pseudo element</h3>
+    <p>The first line pseudo element is used to add a special style to the first line of a text</p>
+    
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni nihil enim neque, perferendis fugit eos eaque nobis dolorem nesciunt natus aspernatur, dolor dolores! Amet placeat deserunt voluptas harum, necessitatibus inventore dicta ipsum. Odit, sequi, totam nisi fuga earum ratione repellat quisquam sunt, ipsam inventore quasi officiis. Pariatur, itaque eum?</p>
+    <p>The following property applied to the first-line pseudo-element</p>;
+    <ul>
+        <li>color properties</li>
+        <li>font properties</li>
+        <li>background properties</li>
+        <li>word spacing</li>
+        <li>text decoration</li>
+        <li>vertical align</li>
+        <li>Letter spacing</li>
+        <li>text transform</li>
+        <li>line height</li>
+        <li>clear</li>
+    </ul>
+    
+    <h1>First Letter Pseudo class</h1>
+    <p>The ::first-letter pseudo-element is used to add a special style to the first letter of a text</p>
+
+    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, beatae!</p>
+
+    <p>The following properties apply to ::first-letter pseudo-element</p>
+    <ol>
+        <li>font property</li>
+        <li>color property</li>
+        <li>background property</li>
+        <li>margin property</li>
+        <li>padding property</li>
+        <li>border property</li>
+        <li>text decoration</li>
+        <li>vertical align</li>
+        <li>text transform</li>
+        <li>line height</li>
+        <li>float</li>
+        <li>clear</li>
+    </ol>
+
+    <h4>The ::before pseudo element</h4>
+    <p>The before pseudo-element can be used to insert some content before the content of an element</p>
+
+    <h4 class="heading1">This is a heading</h4>
+
+    <h4>The ::markers pseudo-element</h4>
+    <p>The ::markers pseudo-element select the marker of the list element</p>
+    <ul>
+        <li>Father</li>
+        <li>Mother</li>
+        <li>Children</li>
+    </ul>
+    <ol>
+        <li>Damilola</li>
+        <li>Ebube</li>
+        <li>Prudence</li>
+    </ol>
+
+    <h4>The ::selection pseudo-element</h4>
+    <p>The ::selection pseudo-element matches the portion of an element that is selected by a user</p>
+
+    <p>css property that can be applied to the ::selection pseudo-element are color, background, cursor, outline
+    </p>
+
+
+
+</body>
+</html>

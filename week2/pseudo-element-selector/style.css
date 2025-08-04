@@ -1,0 +1,18 @@
+#para2::first-line{
+    font-variant: small-caps;
+    color: green;
+}
+.para3::first-letter{
+   color: red;
+   font-size: 25px; 
+}
+.heading1::before, .heading1::after{
+    content: url(/assets/104498_facebook_icon.svg);
+}
+::marker{
+    color: red;
+}
+::selection{
+    color: red;
+    background-color: black;
+}

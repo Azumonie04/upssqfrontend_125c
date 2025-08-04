@@ -1,0 +1,44 @@
+.anchor:hover{
+    background-color: rgb(9, 48, 53);
+}
+.classname{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.classname:hover{
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: pink;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: blue;
+}
+.para1{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+.effect:hover p{
+    display: block;
+}
+/* p:first-child{
+    color: blue;
+} */
+/* p i:first-child{
+    color: blue;
+} */
+ input:focus{
+    background-color: yellow;
+ }

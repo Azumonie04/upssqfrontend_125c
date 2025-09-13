@@ -1,0 +1,11 @@
+a[target="_parent"]{
+    background-color: red;
+}
+[title= "WHO"]{
+    background-color: red;
+}
+[title ~="fruits"]{
+    border: 5px solid red;
+}
+
+

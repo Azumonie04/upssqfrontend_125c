@@ -1,0 +1,72 @@
+.order1{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+.order1 >div {
+    background-color: dodgerblue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+}
+.flex-grow{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+.flex-grow > div{
+    background-color: dodgerblue;
+    width: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+}
+.flex-shrink{
+    display: flex;
+    background-color: #f1f1f1;
+    flex-direction: row;
+    align-items: stretch;
+}
+.flex-shrink>div{
+    background-color: dodgerblue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    line-height: 75px;
+}
+.flex-basis{
+    display: flex;
+    background-color: #f1f1f1;
+    align-items: stretch;
+}
+.flex-basis>div{
+    background-color: dodgerblue;
+    width: 100px;margin: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    line-height: 75px;
+}
+.flex{
+    display: flex;
+    background-color: #f1f1f1;
+    align-items: stretch;
+}
+.flex>div{
+    background-color: dodgerblue;
+    width: 100px;
+    margin: 10px;
+    line-height: 75px;
+    color: #f1f1f1;
+    text-align: center;
+}
+@media screen and (min-width: 400px) {
+    .order1{
+        background-color: aqua;
+    }
+}

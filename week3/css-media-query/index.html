@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css-media-query/style.css">
+</head>
+<body>
+    <h1>Css Media Query</h1>
+    <p>The @media rule, It was introduced in CSS2 made it possible to define different styles, rules, for different media type. Media query is CSS3 extended the css2 media types idea: Instead of looking for a type of device, they look for the capability of the device. Media query can be used to check many things such as :</p>
+    <ul>
+        <li>width and height of the viewport</li>
+        <li>orientation of the viewport[]</li>
+        <li>resolution</li>
+    </ul>
+    <p>using media queries are a popular technique for delivering a tailored stylesheet to desktop, laptops, tables and mobile phones (such as iphone and android phones).</p>
+
+    <h2>Css Media Types</h2>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>all</td>
+            <td>used for all media type devices</td>
+        </tr>
+        <tr>
+            <td>print</td>
+            <td>used for print preview mode</td>
+        </tr>
+        <tr>
+            <td>screen</td>
+            <td>used for computer screen, tablets, smart-phones etc.</td>
+        </tr>
+    </table>
+    <h2>Css common Media Features</h2>
+    <p>Here are some commonly used media features:</p>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>orientation</td>
+            <td>orientation of the viewport.landsape or portrait</td>
+        </tr>
+        <tr>
+            <td>max-height</td>
+            <td>maximum height of the viewport</td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td>minimum height of the viewport</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>height of the viewport[including scrollbar]</td>
+        </tr>
+        <tr>
+            <td>max-width</td>
+            <td>maximum width of viewport</td>
+        </tr>
+        <tr>
+            <td>min-width</td>
+            <td>minimum width of the viewport</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>width of the viewport[including scrollbar]</td>
+        </tr>
+    </table>
+    <h2>Media Query Syntax</h2>
+    <p>A media query consists of a media type and can contain one or more features, which resolve to either true or false</p>
+    <code>
+        @media not|only mediatype and (media feature) and (media feature) {
+  CSS-Code;
+}
+    </code>
+    <p>The mediatype is optional (if omitted, it will be set to all). However, if you use <b>not or only</b>>, you must also specify a mediatype. The result of the query is true if the specified media type matches the type of device the document is being displayed on and all media features in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.</p>
+
+    <pre style="background-color: rgb(241, 241, 186);">
+        Meaning of the not, only, and and keywords:
+        
+        not: This keyword inverts the meaning of an entire media query 
+        
+        only: This keyword prevents older browsers that do not support media queries from applying the specified styles. It has no effect on modern browsers.
+        
+        and: This keyword combines a media type and one or more media features.
+    </pre>
+    <h2>Media Queries Simple Examples</h2>
+    <p>One way to use media queries is to have an alternate CSS section right inside your style sheet.
+
+The following example changes the background-color to lightgreen if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the background-color will be pink):</p>
+
+
+    
+
+</body>
+</html>

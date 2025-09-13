@@ -1,0 +1,12 @@
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    color: crimson;
+}
+@media screen and (min-width: 200px) {
+    .media1{
+        background-color: aqua;
+    }
+}

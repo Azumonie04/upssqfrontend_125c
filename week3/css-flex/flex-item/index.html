@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css-flex/flex-item/style.css">
+</head>
+<body>
+    <h1>Css Flex-item</h1>
+     
+    <p>The flex-items are the direct-child element of a flex container. The css property we use for flex-items are:</p>
+    <ul>
+        <li>Order</li>
+        <li>Flex-grow</li>
+        <li>Flex-shrink</li>
+        <li>Flex-basis</li>
+        <li>Flex</li>
+        <li>align-self</li>
+    </ul>
+
+    <h2>The Order-property</h2>
+
+    <p>The order property specifies the order of the Flex-item inside the container. The first Flex-item in the code does not have to appear as the first item in the layout, the order value must be a number and default value is 0</p>
+
+    <div class="order1">
+        <div style="order: 3;">1</div>
+        <div style="order: 2;">2</div>
+        <div style="order: 4;">3</div>
+        <div style="order: 1;">4</div>
+    </div>
+
+    <h2>The Flex-grow property</h2>
+
+    <p>The Flex-grow property specifies how a flex-item will grow relative to the rest of the flex-items, the value must be a number and the default value is 0</p>
+    <div class="flex-grow">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div style="flex-grow: 8;">3</div>
+    </div>
+
+    <h2>Flex-shrink</h2>
+
+    <p>The Flex-shrink property specifies how much a flex-item will shrink relative to the rest of the flex-items. The value must be a number and the default Value is 1</p>
+    <div class="flex-shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div style="flex-shrink: 0  ;">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>Flex-basis</h2>
+
+    <p>The Flex-basis property specifies the initial length of a flex-item</p>
+    <div class="flex-basis">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 200px;">3</div>
+        <div>4</div>
+    </div>
+
+    <h2>Flex property</h2>
+
+    <p>the flex property is a shorthand property for the Flex-grow, flex-shrink and flex-basis</p>
+    <div class="flex">
+        <div style="flex: ;">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

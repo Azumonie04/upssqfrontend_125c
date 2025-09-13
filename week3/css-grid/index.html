@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/week3/css-grid/style.css">
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td, th{
+        border: 1px solid #DDDDDD;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #DDDDDD;
+      }
+    </style>
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+        Grid
+    </div>
+    <div class="links colour-white">
+         <ul>
+            <li><a href="#" class="color-white padding-links">layout</a></li>
+            <li><a href="#" class="color-white padding-links">Col-rows</a></li>
+            <li><a href="#" class="color-white padding-links">Grid-area</a></li>
+        </ul>
+    </div>
+   </header>
+   <section class="section color-white">
+    <h1 class="section__title">CSS Grid layout</h1>
+    <p class="para">The Grid layout module offers a grid-base layout system with rows and colums</p>
+    <p class="para">The grid layout module makesit easy to design complex and responsive web pages withiout using float and positioning</p>
+    <div class="container">
+        <div class="heading">
+            <h2>My heading</h2>
+        </div>
+        <div class="sidebar">
+            <a href="#" class="color-white">Link 1</a>
+            <br>
+            <a href="#" class="color-white ">Link 2</a>
+            <br>
+            <a href="#" class="color-white ">Link 3</a>
+        </div>
+        <div class="content">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor incidunt officiis quibusdam necessitatibus sed neque illo earum nesciunt quia mollitia, dolores voluptatibus atque repellendus?</p>
+        </div>
+        <!-- <div class="image">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eos?
+        </div> -->
+        <div class="footer">footer</div>
+    </div>
+   </section>
+   <section class="section">
+    <h2>CSS Grid componet</h2>
+    <p>A grid always consist of :</p>
+    <ul>
+        <li>A grid container which is the parent container</li>
+        <li>A grid item -items inside the container</li>
+    </ul>
+    <hr>
+    <h2>Grid container and grid item</h2>
+    <p>A grid layout consist of a parent element (The grid container),with one or more grid items</p>
+    <p>All direct children of a grid container automaticaly becomes grid items</p>
+    <hr>
+    <br>
+    <p>A grid layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em></p>
+    <p>Direct child element or elements of a grid container automaticaly becomes grid items</p>
+    <div class="container-fluid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+3:28
+</section>
+   <section class="section-example">
+    <div class="breakpoint-free">
+        <h3>Break point free</h3>
+        <p>Grid layout allows you to create responsive design without the need of a media quarre, adapting to different screen size automaticaly</p>
+        <p>It is a grid system that can adjust the layout based on the available space making it easier to create flexible and adaptive design</p>
+    </div>
+    <div class="gridexmple">
+        <h3>Grid example</h3>
+        <div class="container-fluid-exmple padding-card">
+            <div class="grid">
+                <div class="one text-colour padding-card bg-colour text-align-center">1</div>
+                <div class="two text-colour padding-card bg-colour text-align-center">2</div>
+                <div class="three text-colour padding-card bg-colour text-align-center">3</div>
+                <div class="four text-colour padding-card bg-colour text-align-center">4</div>
+                <div class="five text-colour padding-card bg-colour text-align-center">5</div>
+                <div class="six text-colour padding-card bg-colour text-align-center">
+                    6
+                </div>
+                <div class="seven text-colour padding-card bg-colour text-align-center">
+                    7
+                </div>
+                <div class="eight text-colour padding-card bg-colour text-align-center">8</div>
+            </div>
+        </div>
+    </div>
+   </section>
+       <h2>All CSS Grid Properties</h2>
+       <table>
+        <tr>
+        <th>Property</th>
+        <th>Description</th>
+        </tr>
+        <tr>
+            <td>alingn-content</td>
+            <td>Vertically aligns the whole grid inside the container(when total grid size is smaller than container)</td>
+        </tr>
+        <tr>
+            <td>align-items</td>
+            <td>Aligns content in a grid item along the column axis</td>
+        </tr>
+        <tr>
+            <td>align-self</td>
+            <td>Alings the content for a specific grid item along the column axis</td>
+        </tr>
+        <tr>
+        <td>display</td>
+        <td>Specific the display behavior(the type of rendering box) of an element</td>
+        </tr>
+        <tr>
+            <td>column-gap</td>
+            <td>Specifies the gap between the columns</td>
+        </tr>
+        <tr>
+            <td>gap</td>
+            <td>A shorthand property for the row-gap and the column-gap property</td>
+        </tr>
+        <tr>
+            <td>grid</td>
+            <td>A shorthand property for the grid-templete-rows, grid-templete-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties</td>
+        </tr>
+        <tr>
+            <td>grid-area</td>
+            <td>Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties</td>
+        </tr>
+        <tr>
+            <td>grid-auto-columns</td>
+            <td>Specifies a default column size</td>
+        </tr>
+        <tr>
+            <td>grid-auto-flow</td>
+            <td>Specifies how auto-placed items are inserted in the grid</td>
+        </tr>
+        <tr>
+            <td>grid-auto-rows</td>
+            <td>Specifies a default row size</td>
+        </tr>
+        <tr>
+            <td>grid-column</td>
+            <td>A shorthand property for the grid-column-start and the grid-column-end properties</td>
+        </tr>
+        <tr>
+            <td>grid-column-end </td>
+            <td>Specifies where to end the grid item</td>
+        </tr>
+
+
+
+
+
+
+
+</head>
+<body>
+    <h1>CSS Grid Layout</h1>
+
+<p>The Grid Layout Module offers a grid-based layout system, with rows and columns.</p>
+<p>The Grid Layout Module makes it easy to design complex and responsive web pages without using floats and positioning:</p>
+</tr>
+        <tr>
+            <td>grid-row</td>
+            <td>A shorthand property for the grid-row-start and the grid-row-end properties</td>
+        </tr>
+        <tr>
+            <td>grid-row-end</td>
+            <td>Specifies where to end the grid item</td>
+        </tr>
+        <tr>
+            <td>grid-row-start</td>
+            <td>Specifies where to start the grid item</td>
+        </tr>
+        <tr>
+            <td>grid-template</td>
+            <td>A shorthand property for the grid-template-rows, grid-template-columns and grid-areas properties</td>
+        </tr>
+        <tr>
+            <td>grid-template-areas</td>
+            <td>Specifies how to display columns and rows, using named grid items</td>
+        </tr>
+        <tr>
+            <td>grid-template-columns</td>
+            <td>Specifies the size of the columns, and how many columns in a grid layout</td>
+        </tr>
+        <tr>
+            <td>grid-template-rows</td>
+            <td>Specifies the size of the rows in a grid layout</td>
+        </tr>
+        <tr>
+            <td>justify-content</td>
+            <td>    Horizontally aligns the whole grid inside the container (when total grid size is smaller than container)</td>
+        </tr>
+        <tr>
+            <td>justify-self</td>
+            <td>Aligns the content for a specific grid item along the row axis</td>
+        </tr>
+        <tr>
+            <td>place-self</td>
+            <td>A shorthand property for the align-self and the justify-self properties</td>
+        </tr>
+        <tr>
+            <td>place-content</td>
+            <td>A shorthand property for the align-content and the justify-content properties</td>
+        </tr>
+        <tr>
+           <td>row-gap</td>
+           <td>Specifies the gap between the grid rows</td>
+        </tr>
+       </table>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/week2/position/style.css">
+    <title>Positions</title>
+</head>
+<body>
+    <section>
+        <h1>The position Property</h1>
+        <p>
+            THe position property specifies the type of positioning method used for an element{static relative fixed absolute,sticky
+        </p>
+
+        <p>
+            position property specifies the tyype of positioning method used for an elements There are five different position value.
+        </p>
+
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+
+        <p>elements are then positioned using top, bottom, left and right. <b>note:</b>This properties listed will not work unless the position property is set first, they also work differently depending on the position value
+         </p>
+
+         <h2>Position static</h2>
+
+         <p>elements are position static by default, static position elements are not affected by the top,botton, left and right properties. An element with position static is not positioned in any special way</p>
+
+        <h2>Position:Relative;</h2>
+
+        <p>An element with position relative is position relative to its initial position. setting the top, right bottom and left property of a relativly positioned element will cause it to be adjusted away from the normal position</p>
+
+        <div class="relative">using position relative</div>
+        
+        <h2>Position:fixed</h2>
+        <h1>an element with the position fixed is Position relative to the viewport which means it always stay in the same page even if the page is closed. The top right bottom and left properties are used to position the element</h1>
+        <div class="fixed">using position fixed</div>
+
+        <h2>Position:Absolute</h2>
+        <p>An element with position:absolute is positioned relative to the nearest position ancestor, instead of position relative to the viewport, however, If an absolute position element does not have any position ancestor, it uses the document body</p>
+        <p><b>note:</b> Absolute position element are removed from the normal flow and can overlap any elements</p>
+
+        <div class="relative2">This div element is position relative
+            <div class="absolute">This div has position absolute</div>
+        </div>
+
+        <h3>Position:sticky</h3>
+
+        <p>An element position:sticky is positioned based on the users sroll position, a sticky element toggles between relative and fixed, depending on the scroll position. It is position:relative untill a given offset position is met in the viewport- then it "sticks" in place like position fixed</p>
+
+        <div class="sticky">I'm sticky!!</div>
+            <div class="innerdiv/">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit in natus molestiae, hic dolorum maiores labore esse sint qui magnam modi veniam repellendus fuga deleniti quae commodi similique tenetur culpa, perspiciatis fugiat quidem sapiente doloribus atque. Eaque natus aperiam velit. Odit porro beatae rem, necessitatibus nemo fuga voluptates provident quae tempore dolor, commodi ratione sed accusantium ipsam aliquid, est praesentium alias nostrum expedita nulla incidunt culpa ipsa vel. Similique ducimus, fugit perferendis labore magnam ad, excepturi cumque ipsum deleniti nostrum quisquam maxime itaque hic laborum. Quibusdam, excepturi maiores aspernatur quisquam dolor harum officiis assumenda. Nihil beatae culpa odio ullam laborum?
+            </div>
+   </section>
+
+   
+    
+</body>
+</html>
